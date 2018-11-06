@@ -59,8 +59,8 @@ public class BootstrapperBuilder {
         Bootstrapper bootstrapper = null;
 
         try {
-            Class bootstraperClass = Class.forName(className);
-            bootstrapper = (Bootstrapper) bootstraperClass.newInstance();
+            Class bootstrapperClass = Class.forName(className);
+            bootstrapper = (Bootstrapper) bootstrapperClass.newInstance();
 
             if(config == null ) config = new Config(filePath, configMap);
 

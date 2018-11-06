@@ -30,7 +30,7 @@ public abstract class ThreadBootstrapper extends Thread implements Bootstrapper{
     }
 
     /**
-     * Interrupt thread and close bootstraper
+     * Interrupt thread and close bootstrapper
      */
     @Override
     public void interrupt() {

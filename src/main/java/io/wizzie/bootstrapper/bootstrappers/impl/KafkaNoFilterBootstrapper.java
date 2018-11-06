@@ -37,7 +37,7 @@ public class KafkaNoFilterBootstrapper extends ThreadBootstrapper {
         consumerConfig.put(KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
         consumerConfig.put(VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
         consumerConfig.put(GROUP_ID_CONFIG, String.format(
-                "kafka-no-filter-bootstraper-%s-%s", appId, UUID.randomUUID().toString())
+                "kafka-no-filter-bootstrapper-%s-%s", appId, UUID.randomUUID().toString())
         );
 
         List<String> bootstrapperTopics = config.get(BOOTSTRAP_TOPICS_CONFIG);

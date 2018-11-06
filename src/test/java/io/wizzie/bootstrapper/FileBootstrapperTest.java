@@ -28,7 +28,7 @@ public class FileBootstrapperTest {
         }
 
         Map<String, Object> configMap = new HashMap<>();
-        configMap.put("file.bootstraper.path", Thread.currentThread().getContextClassLoader().getResource("file-bootstrapper-config.json").getFile());
+        configMap.put("file.bootstrapper.path", Thread.currentThread().getContextClassLoader().getResource("file-bootstrapper-config.json").getFile());
 
         Bootstrapper bootstrapper = BootstrapperBuilder.makeBuilder()
                 .boostrapperClass("io.wizzie.bootstrapper.bootstrappers.impl.FileBootstrapper")
@@ -46,7 +46,7 @@ public class FileBootstrapperTest {
     @Test
     public void closeFileBootstrapper() throws Exception {
         Map<String, Object> configMap = new HashMap<>();
-        configMap.put("file.bootstraper.path", Thread.currentThread().getContextClassLoader().getResource("file-bootstrapper-config.json").getFile());
+        configMap.put("file.bootstrapper.path", Thread.currentThread().getContextClassLoader().getResource("file-bootstrapper-config.json").getFile());
 
         Bootstrapper bootstrapper = BootstrapperBuilder.makeBuilder()
                 .boostrapperClass("io.wizzie.bootstrapper.bootstrappers.impl.FileBootstrapper")

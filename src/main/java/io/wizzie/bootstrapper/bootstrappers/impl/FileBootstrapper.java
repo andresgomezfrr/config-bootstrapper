@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 
 public class FileBootstrapper extends BaseBootstrapper {
-    public static final String FILE_PATH = "file.bootstraper.path";
+    public static final String FILE_PATH = "file.bootstrapper.path";
 
     @Override
     public void init(Config config) throws Exception {
